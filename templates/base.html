@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>base</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+
+
+
+<div style="margin: 0;padding: 0;background-color: lightseagreen">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<div style="background-color: #0c102e;
+margin-right: 300px;
+margin-left: 200px;
+padding: 100px;
+border-radius: 14px;
+"
+>
+
+    {% block body %}
+
+    {% endblock %}
+</div>
+</body>
+</html>
